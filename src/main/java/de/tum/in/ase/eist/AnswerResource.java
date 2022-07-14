@@ -18,6 +18,7 @@ public class AnswerResource {
 	private final QueryProcessor queryProcessor;
 
 	public AnswerResource(QueryProcessor queryProcessor) {
+
 		this.queryProcessor = queryProcessor;
 	}
 
@@ -27,5 +28,7 @@ public class AnswerResource {
 		String answer = queryProcessor.process(query);
 		return ResponseEntity.ok(answer);
 	}
+
+
 
 }
